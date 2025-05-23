@@ -210,8 +210,8 @@ A: Absolutely. Open a Discussion or Issue.
 
 ## @sugarypumpkin822
 
-If you’ve contributed code, docs, testing, cheats, themes, plugins, or even just encouragement, **add your name or handle here** (or open a PR for this file):
+If you’ve contributed code, docs, testing, cheats, themes, plugins, or even just encouragement, **ryan allemand** (or open a PR for this file):
 
-- @YOURNAME – Your Special Thanks Description!
+- @ryan allemand – Your Special Thanks Description!
 
 *Every contributor helps make GamesFlow Emulator the most adaptable, community-driven emulator ever. Thank you!*
