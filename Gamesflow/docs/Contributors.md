@@ -208,7 +208,7 @@ A: Absolutely. Open a Discussion or Issue.
 
 ---
 
-## Add Yourself!
+## @sugarypumpkin822
 
 If you’ve contributed code, docs, testing, cheats, themes, plugins, or even just encouragement, **add your name or handle here** (or open a PR for this file):
 
