@@ -201,7 +201,7 @@ A: Absolutely. Open a Discussion or Issue.
 
 - **GitHub Discussions:** [Project Discussions](https://github.com/sugarypumpkin822/gamesflow-emulator-/discussions)
 - **Issues:** [Issue Tracker](https://github.com/sugarypumpkin822/gamesflow-emulator-/issues)
-- **Discord:** [Join the Community](https://discord.gg/YOUR_INVITE)
+- **Discord:** [Join the Community](https://discord.gg/YSu8YPa8Bb)
 - **Reddit:** [r/gamesflow](https://reddit.com/r/gamesflow)
 - **Wiki:** [Project Wiki](https://github.com/sugarypumpkin822/gamesflow-emulator-/wiki)
 - **Email:** gamesflow@protonmail.com
