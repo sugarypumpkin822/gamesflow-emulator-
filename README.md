@@ -1,152 +1,219 @@
-# 🎮 All-Systems Emulator Pack
+# GamesFlow
 
-**All-Systems Emulator Pack** is a cross-platform C#-based emulator development suite designed to unify support for hundreds of consoles, handhelds, arcade boards, and computer systems into one modular, extensible toolkit. Built with Visual Studio in mind, it includes emulator stubs, runtime environments, and development tools for .NET 8+ and Mono.
-
-> 🚀 This project structure mimics enterprise-scale emulator development and is fully expandable.
+**GamesFlow** is a modular, cross-platform, open-source emulator written in C#. GamesFlow aims to provide a single, unified platform for emulating and playing games from many classic systems, including Nintendo, PlayStation, Xbox, and classic Windows environments. The project is designed for extensibility, performance, and ease of use, with a focus on community contributions and transparency.
 
 ---
 
-## 📁 Project Structure
-All-Systems-Emulator-Pack/
-├── Emulators/ # Source code for each emulator core
-├── ROMs/ # Sample or empty directories for ROMs
-├── BIOS/ # BIOS files per platform
-├── Saves/ # Save states & memory card data
-├── Screenshots/ # Screenshot outputs
-├── Cheats/ # Cheat code systems
-├── Shaders/ # CRT/Scanline filters
-├── Frontends/ # GUI and UI wrappers
-├── Configs/ # Per-system configs
-├── Themes/ # UI Themes (RetroCRT, NeonGrid, etc)
-├── Assets/ # Box art, logos, fan art, etc.
-├── Tools/ # Save editors, ISO tools, etc.
-├── bin/Debug/ # Compiled binaries (Debug)
-├── obj/ # Intermediate MSBuild files
-├── Logs/ # Crash logs & telemetry
-├── Updates/ # Patcher and changelog
-├── Docs/ # Help files, install guides
-├── EmulatorPack.sln # Visual Studio solution
-├── EmulatorPack.csproj # Main project file
-├── README.md # This file
-└── LICENSE # Licensing
+## Table of Contents
+
+- [Features](#features)
+- [Supported Systems](#supported-systems)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Building from Source](#building-from-source)
+  - [Running the Emulator](#running-the-emulator)
+- [Configuration](#configuration)
+- [Plugin System](#plugin-system)
+- [User Interface](#user-interface)
+- [Localization](#localization)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [FAQ](#faq)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
-## ✅ Features
+## Features
 
-- 🎮 Supports over **40 platforms**
-- 🧠 Modular architecture with **hot-swappable cores**
-- 🎨 Built-in support for **shaders and filters**
-- 🕹️ Compatible with **XInput / DirectInput / SDL**
-- 💾 Save/load state system
-- 🧪 Unit-testable emulator cores
-- ⚙️ XML/JSON/YAML config support
-- 📦 LaunchBox, RetroArch, and Batocera compatible
+- **Multi-System Emulation**: Play games from Nintendo, PlayStation, Xbox, and Windows classic platforms.
+- **Plugin Architecture**: Flexible system for video, audio, input, and network plugins.
+- **Save States**: Save/load game state at any time.
+- **Modern GUI**: Intuitive, themed user interface with game library, configuration panels, and more.
+- **Cross-Platform**: Runs on Windows, Linux, and macOS.
+- **Configuration Profiles**: Save and switch between different system/game settings.
+- **Localization**: Multi-language support using .resx resource files.
+- **Cheat Support**: Load and manage cheats for supported systems.
+- **Automatic Updates**: (Planned) Built-in update checker for new releases.
+- **Community Driven**: Open to contributions from all emulator enthusiasts.
 
 ---
 
-## 🧱 Emulator Cores
+## Supported Systems
 
-Each core is designed with a plug-and-play architecture. New systems can be added by creating a new folder in `Emulators/` and implementing:
+**Nintendo**
+- NES, SNES, N64, GameCube, Wii
 
-- `SystemCore.cs`
-- `CPU.cs`
-- `PPU.cs`
-- `APU.cs`
-- `MemoryBus.cs`
-- `Controller.cs`
+**PlayStation**
+- PS1, PS2, PS3, PSP
 
-Example:
-```csharp
-public class NESCore : IEmulatorCore {
-    public CPU6502 cpu;
-    public PPU ppu;
-    public APU apu;
+**Xbox**
+- Xbox Classic, Xbox 360, Xbox One (partial/experimental)
 
-    public void LoadROM(string path) {
-        // Load .nes ROM
-    }
+**Windows**
+- Windows 9x, Windows XP, Windows 7 (classic games/ISOs)
 
-    public void Step() {
-        cpu.ExecuteCycle();
-        ppu.RenderScanline();
-        apu.GenerateSample();
-    }
-}
-🧰 Tools Included
-ISO Extractor
+---
 
-ROM Trimmer
+## Screenshots
 
-Save State Converter
+<!-- Add screenshots here -->
+![Main UI Screenshot](docs/screenshots/main_ui.png)
+![Settings Dialog](docs/screenshots/settings.png)
 
-Controller Mapper GUI
+---
 
-Shader Previewer
+## Getting Started
 
-BIOS Verifier
-[Game View]     [Shader View]     [Save State Manager]
-   🎮               🖼️                   💾
- How To Use
-Open EmulatorPack.sln in Visual Studio 2022+
+### Prerequisites
 
-Press F5 to build and run
+- [.NET 8+ SDK](https://dotnet.microsoft.com/download)
+- Visual Studio 2022+ or VS Code
+- For Linux: SDL2, OpenAL, Vulkan (for respective plugins)
+- BIOS files for certain systems (not included)
 
-Drop a ROM into ROMs/NES/, for example
+### Building from Source
 
-Load it through the Emulator UI
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/sugarypumpkin822/gamesflow.git
+    cd gamesflow
+    ```
 
-⚠️ Requirements
-.NET 8 SDK
+2. **Run the structure script (optional for new projects)**:
+    ```powershell
+    ./create_gamesflow_structure.ps1
+    ```
 
-Visual Studio 2022+
+3. **Restore dependencies and build**:
+    ```bash
+    dotnet restore
+    dotnet build GamesFlow.sln
+    ```
 
-Compatible BIOS (see Docs/BIOS_Requirements.md)
+4. **Run the emulator**:
+    ```bash
+    dotnet run --project GamesFlow.GUI
+    ```
 
-Windows 10/11 or Wine on Linux
+### Running the Emulator
 
-👥 Contributors
-DevName1 - NES, SNES cores
+- Place required BIOS files in `GamesFlow.Resources/Bios/`.
+- Add your legal game ROMs/ISOs to the desired location.
+- Launch and configure via the GUI.
 
-DevName2 - UI and Shader Integration
+---
 
-DevName3 - Xbox, PS3 research
+## Configuration
 
-📄 License
-This project is licensed under the MIT License. See LICENSE for full terms.
+All user configuration is stored in the `GamesFlow.Core/Config/` directory.
+- **VideoConfig.cs**: Graphics settings, scaling, shaders, full screen options.
+- **AudioConfig.cs**: Audio backend, buffer size, latency.
+- **InputConfig.cs**: Controller mapping, keyboard shortcuts.
+- **SystemProfiles.cs**: Presets for each emulated system.
 
-📝 Notes
-This README is auto-generated as part of a development scaffold tool and may contain placeholder content. The actual emulator logic must be implemented manually in each system folder.
+Configuration can be edited via the GUI or by hand in the respective files.
 
-🔁 Changelog
-v0.1.0 – Project structure, README, stubs
+---
 
-v0.2.0 – Added Game Boy, SNES support
+## Plugin System
 
-v0.3.0 – Shader support and save manager
+GamesFlow supports dynamic loading of external plugins for:
+- Video (OpenGL, Vulkan, DirectX, Software)
+- Audio (OpenAL, XAudio2, SDL)
+- Input (SDL, XInput, DualShock)
+- Network (Netplay, Online Services)
 
-🛠️ Planned Features
-Discord RPC integration
+Write your own plugins by implementing the provided interfaces in `GamesFlow.Plugins/`.
 
-Netplay / rollback emulation
+---
 
-Localization for emulator UI
+## User Interface
 
-Game achievement tracker
+- **MainWindow**: Game browser, quick launch, recent games.
+- **SettingsDialog**: Tweak all emulator options.
+- **AboutDialog**: Version info and credits.
+- **RomBrowser**: Add, remove, and organize ROMs.
+- **Themes**: Light and dark modes (`Themes/` directory).
 
-ROM hashing + verification
+---
 
-🧪 Unit Test Sample
-[TestClass]
-public class NESCoreTests {
-    [TestMethod]
-    public void TestCPUCycle() {
-        var nes = new NESCore();
-        nes.LoadROM("testrom.nes");
-        nes.Step();
-        Assert.AreEqual(0x20, nes.cpu.A); // Sample test
-    }
-}
+## Localization
 
-📧 Contact
-For support or contribution, please email ryanallemand69@gmail.com
+GamesFlow supports multiple languages out of the box.
+- Language files are in `GamesFlow.GUI/Resources/lang/`.
+- Contribute new translations by adding `.resx` files.
+
+---
+
+## Contributing
+
+We welcome all forms of contribution!
+- Bug reports and feature requests via GitHub Issues.
+- Pull requests for code, documentation, tests, or translations.
+- Discussion and help in our [community forum](https://github.com/sugarypumpkin822/gamesflow/discussions).
+
+Read `CONTRIBUTING.md` for full guidelines.
+
+---
+
+## Testing
+
+- Automated tests are in `GamesFlow.Tests/`.
+- Run all tests:
+    ```bash
+    dotnet test GamesFlow.Tests
+    ```
+
+---
+
+## FAQ
+
+**Q:** Does GamesFlow provide ROMs or BIOS files?<br>
+**A:** No. You must provide your own legally acquired game files and system BIOS.
+
+**Q:** What systems are supported?<br>
+**A:** See [Supported Systems](#supported-systems). More may be added with community help!
+
+**Q:** Can I use my gamepad?<br>
+**A:** Yes! Most major controllers are supported via plugin.
+
+**Q:** How do I report a bug?<br>
+**A:** Open a GitHub issue and include system details, logs, and reproduction steps.
+
+---
+
+## License
+
+- If you download GamesFlow from GitHub, it is available under the MIT License (see [LICENSE](LICENSE)).
+- **If you obtain GamesFlow from any other source, the project and all its files are copyright © 2025 sugarypumpkin822. All rights reserved.**
+- See full license in [LICENSE](LICENSE).
+
+---
+
+## Disclaimer
+
+GamesFlow is an educational project. It does **not** condone piracy and does **not** include copyrighted ROMs, ISOs, or BIOS.
+You are responsible for the legality of any files you use with this emulator.
+
+---
+
+## Contact
+
+- GitHub: [sugarypumpkin822/gamesflow](https://github.com/sugarypumpkin822/gamesflow)
+- Email: [Contact via GitHub profile](https://github.com/sugarypumpkin822)
+
+---
+
+## Acknowledgements
+
+- Thanks to the open-source emulation community.
+- Inspired by projects such as RetroArch, Dolphin, PCSX2, and others.
+- Icon and art assets by contributors (see `docs/Contributors.md`).
+
+---
+
+*Happy Gaming!*
