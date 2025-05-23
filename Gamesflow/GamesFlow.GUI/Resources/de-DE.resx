@@ -1,1 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    German (de-DE) resource file for GamesFlow Emulator.
+    This file contains a massive set of UI strings, error messages, tooltips, dialog texts, menu items, and more.
+  -->
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
 
+  <!-- Main Menu -->
+  <data name="Menu.File" xml:space="preserve"><value>Datei</value></data>
+  <data name="Menu.File.Open" xml:space="preserve"><value>Öffnen...</value></data>
+  <data name="Menu.File.Recent" xml:space="preserve"><value>Zuletzt geöffnet</value></data>
+  <data name="Menu.File.Exit" xml:space="preserve"><value>Beenden</value></data>
+  <data name="Menu.File.ImportROM" xml:space="preserve"><value>ROM importieren...</value></data>
+  <data name="Menu.File.ExportSave" xml:space="preserve"><value>Spielstand exportieren...</value></data>
+  <data name="Menu.File.Settings" xml:space="preserve"><value>Einstellungen</value></data>
+  <data name="Menu.File.CheckForUpdates" xml:space="preserve"><value>Nach Updates suchen...</value></data>
+  <data name="Menu.File.Preferences" xml:space="preserve"><value>Voreinstellungen</value></data>
+  <data name="Menu.Edit" xml:space="preserve"><value>Bearbeiten</value></data>
+  <data name="Menu.Edit.Copy" xml:space="preserve"><value>Kopieren</value></data>
+  <data name="Menu.Edit.Paste" xml:space="preserve"><value>Einfügen</value></data>
+  <data name="Menu.Edit.Cut" xml:space="preserve"><value>Ausschneiden</value></data>
+  <data name="Menu.View" xml:space="preserve"><value>Ansicht</value></data>
+  <data name="Menu.View.Fullscreen" xml:space="preserve"><value>Vollbild</value></data>
+  <data name="Menu.View.Windowed" xml:space="preserve"><value>Fenstermodus</value></data>
+  <data name="Menu.View.ZoomIn" xml:space="preserve"><value>Vergrößern</value></data>
+  <data name="Menu.View.ZoomOut" xml:space="preserve"><value>Verkleinern</value></data>
+  <data name="Menu.System" xml:space="preserve"><value>System</value></data>
+  <data name="Menu.System.Reset" xml:space="preserve"><value>System zurücksetzen</value></data>
+  <data name="Menu.System.PowerOff" xml:space="preserve"><value>Ausschalten</value></data>
+  <data name="Menu.System.LoadBIOS" xml:space="preserve"><value>BIOS laden...</value></data>
+  <data name="Menu.Emulation" xml:space="preserve"><value>Emulation</value></data>
+  <data name="Menu.Emulation.Pause" xml:space="preserve"><value>Pausieren</value></data>
+  <data name="Menu.Emulation.Resume" xml:space="preserve"><value>Fortsetzen</value></data>
+  <data name="Menu.Emulation.FastForward" xml:space="preserve"><value>Vorspulen</value></data>
+  <data name="Menu.Emulation.SlowMotion" xml:space="preserve"><value>Zeitlupe</value></data>
+  <data name="Menu.Emulation.Rewind" xml:space="preserve"><value>Zurückspulen</value></data>
+  <data name="Menu.SaveState" xml:space="preserve"><value>Spielstand</value></data>
+  <data name="Menu.SaveState.Save" xml:space="preserve"><value>Speichern</value></data>
+  <data name="Menu.SaveState.Load" xml:space="preserve"><value>Laden</value></data>
+  <data name="Menu.SaveState.Manage" xml:space="preserve"><value>Verwalten...</value></data>
+  <data name="Menu.Tools" xml:space="preserve"><value>Werkzeuge</value></data>
+  <data name="Menu.Tools.Debugger" xml:space="preserve"><value>Debugger</value></data>
+  <data name="Menu.Tools.CheatManager" xml:space="preserve"><value>Cheat-Manager</value></data>
+  <data name="Menu.Tools.ROMManager" xml:space="preserve"><value>ROM-Manager</value></data>
+  <data name="Menu.Tools.AssetExtractor" xml:space="preserve"><value>Asset-Extraktor</value></data>
+  <data name="Menu.Tools.Profiler" xml:space="preserve"><value>Profiler</value></data>
+  <data name="Menu.Tools.ScriptingConsole" xml:space="preserve"><value>Skript-Konsole</value></data>
+  <data name="Menu.Netplay" xml:space="preserve"><value>Netplay</value></data>
+  <data name="Menu.Netplay.HostGame" xml:space="preserve"><value>Spiel hosten</value></data>
+  <data name="Menu.Netplay.JoinGame" xml:space="preserve"><value>Spiel beitreten</value></data>
+  <data name="Menu.Netplay.Lobby" xml:space="preserve"><value>Lobby</value></data>
+  <data name="Menu.Netplay.Spectator" xml:space="preserve"><value>Zuschauer-Modus</value></data>
+  <data name="Menu.Cloud" xml:space="preserve"><value>Cloud</value></data>
+  <data name="Menu.Cloud.SyncNow" xml:space="preserve"><value>Jetzt synchronisieren</value></data>
+  <data name="Menu.Cloud.ManageAccounts" xml:space="preserve"><value>Konten verwalten</value></data>
+  <data name="Menu.Help" xml:space="preserve"><value>Hilfe</value></data>
+  <data name="Menu.Help.About" xml:space="preserve"><value>Über</value></data>
+  <data name="Menu.Help.ViewDocs" xml:space="preserve"><value>Dokumentation anzeigen</value></data>
+  <data name="Menu.Help.ReportIssue" xml:space="preserve"><value>Problem melden</value></data>
+  <data name="Menu.Theme" xml:space="preserve"><value>Thema</value></data>
+  <data name="Menu.Theme.Dark" xml:space="preserve"><value>Dunkel</value></data>
+  <data name="Menu.Theme.Light" xml:space="preserve"><value>Hell</value></data>
+  <data name="Menu.Theme.Retro" xml:space="preserve"><value>Retro</value></data>
+  <data name="Menu.Theme.Neon" xml:space="preserve"><value>Neon</value></data>
+
+  <!-- Dialogs, Prompts, Tooltips -->
+  <data name="Dialog.OpenROM.Title" xml:space="preserve"><value>ROM öffnen</value></data>
+  <data name="Dialog.OpenROM.Filter" xml:space="preserve"><value>Unterstützte ROMs (*.nes; *.sfc; *.smc; *.bin; *.gb; *.gba; *.iso; *.cue; *.img; *.zip; *.7z)|*.nes;*.sfc;*.smc;*.bin;*.gb;*.gba;*.iso;*.cue;*.img;*.zip;*.7z|Alle Dateien (*.*)|*.*</value></data>
+  <data name="Dialog.SaveState.Saved" xml:space="preserve"><value>Spielstand gespeichert!</value></data>
+  <data name="Dialog.SaveState.Loaded" xml:space="preserve"><value>Spielstand geladen!</value></data>
+  <data name="Dialog.SaveState.Failed" xml:space="preserve"><value>Fehler beim Laden/Speichern des Spielstands.</value></data>
+  <data name="Dialog.Settings.Title" xml:space="preserve"><value>Einstellungen</value></data>
+  <data name="Dialog.Settings.RestartRequired" xml:space="preserve"><value>Einige Änderungen erfordern einen Neustart der Anwendung.</value></data>
+  <data name="Dialog.Confirm.Exit" xml:space="preserve"><value>Möchten Sie GamesFlow wirklich beenden?</value></data>
+  <data name="Dialog.Warning.BIOSMissing" xml:space="preserve"><value>BIOS-Datei fehlt für dieses System. Bitte fügen Sie die entsprechende Datei dem BIOS-Ordner hinzu.</value></data>
+  <data name="Dialog.Error.ROMCorrupt" xml:space="preserve"><value>Fehler: ROM ist beschädigt oder inkompatibel.</value></data>
+  <data name="Dialog.Error.UnsupportedFormat" xml:space="preserve"><value>Fehler: Dateiformat wird nicht unterstützt.</value></data>
+  <data name="Dialog.Cheat.AddSuccess" xml:space="preserve"><value>Cheat hinzugefügt!</value></data>
+  <data name="Dialog.Cheat.InvalidCode" xml:space="preserve"><value>Ungültiger Cheat-Code.</value></data>
+  <data name="Dialog.Netplay.ConnectionLost" xml:space="preserve"><value>Verbindung zum Netplay-Server verloren.</value></data>
+  <data name="Dialog.Cloud.SyncSuccess" xml:space="preserve"><value>Cloud-Synchronisierung abgeschlossen.</value></data>
+  <data name="Dialog.Cloud.SyncFailed" xml:space="preserve"><value>Cloud-Synchronisierung fehlgeschlagen.</value></data>
+  <data name="Dialog.Profiler.Started" xml:space="preserve"><value>Profiler gestartet.</value></data>
+  <data name="Dialog.Profiler.Stopped" xml:space="preserve"><value>Profiler gestoppt.</value></data>
+  <data name="Dialog.Update.Available" xml:space="preserve"><value>Update verfügbar! Jetzt herunterladen?</value></data>
+  <data name="Dialog.Update.None" xml:space="preserve"><value>Keine neuen Updates gefunden.</value></data>
+  <data name="Dialog.Error.Generic" xml:space="preserve"><value>Ein unbekannter Fehler ist aufgetreten.</value></data>
+  <data name="Dialog.Theme.Changed" xml:space="preserve"><value>Thema geändert.</value></data>
+
+  <!-- Status Bar -->
+  <data name="StatusBar.Ready" xml:space="preserve"><value>Bereit</value></data>
+  <data name="StatusBar.Emulating" xml:space="preserve"><value>Emuliert: {0}</value></data>
+  <data name="StatusBar.Paused" xml:space="preserve"><value>Pausiert</value></data>
+  <data name="StatusBar.Netplay" xml:space="preserve"><value>Netplay: {0}</value></data>
+  <data name="StatusBar.CloudSync" xml:space="preserve"><value>Cloud-Sync: {0}</value></data>
+  <data name="StatusBar.SaveSlot" xml:space="preserve"><value>Speicher-Slot: {0}</value></data>
+  <data name="StatusBar.FPS" xml:space="preserve"><value>FPS: {0}</value></data>
+  <data name="StatusBar.Battery" xml:space="preserve"><value>Batterie: {0}%</value></data>
+  <data name="StatusBar.Controller" xml:space="preserve"><value>Controller: {0}</value></data>
+  <data name="StatusBar.Recording" xml:space="preserve"><value>Aufnahme läuft</value></data>
+  <data name="StatusBar.Streaming" xml:space="preserve"><value>Live-Streaming</value></data>
+  <data name="StatusBar.UpdateAvailable" xml:space="preserve"><value>Update verfügbar!</value></data>
+  <data name="StatusBar.Error" xml:space="preserve"><value>Fehler: {0}</value></data>
+
+  <!-- Settings Dialog -->
+  <data name="Settings.General" xml:space="preserve"><value>Allgemein</value></data>
+  <data name="Settings.Language" xml:space="preserve"><value>Sprache</value></data>
+  <data name="Settings.Theme" xml:space="preserve"><value>Thema</value></data>
+  <data name="Settings.BIOSFolder" xml:space="preserve"><value>BIOS-Ordner</value></data>
+  <data name="Settings.ROMFolder" xml:space="preserve"><value>ROM-Ordner</value></data>
+  <data name="Settings.SaveFolder" xml:space="preserve"><value>Speicher-Ordner</value></data>
+  <data name="Settings.AutoSave" xml:space="preserve"><value>Automatisch speichern</value></data>
+  <data name="Settings.MaxSaveSlots" xml:space="preserve"><value>Maximale Speicher-Slots</value></data>
+  <data name="Settings.LoggingLevel" xml:space="preserve"><value>Logging-Stufe</value></data>
+  <data name="Settings.CloudSync" xml:space="preserve"><value>Cloud-Synchronisierung</value></data>
+  <data name="Settings.CloudProvider" xml:space="preserve"><value>Cloud-Anbieter</value></data>
+  <data name="Settings.Netplay" xml:space="preserve"><value>Netplay</value></data>
+  <data name="Settings.NetplayPort" xml:space="preserve"><value>Netplay-Port</value></data>
+  <data name="Settings.Audio" xml:space="preserve"><value>Audio</value></data>
+  <data name="Settings.AudioDriver" xml:space="preserve"><value>Audio-Treiber</value></data>
+  <data name="Settings.AudioLatency" xml:space="preserve"><value>Audio-Latenz</value></data>
+  <data name="Settings.AudioVolume" xml:space="preserve"><value>Lautstärke</value></data>
+  <data name="Settings.Video" xml:space="preserve"><value>Video</value></data>
+  <data name="Settings.VideoRenderer" xml:space="preserve"><value>Video-Renderer</value></data>
+  <data name="Settings.VideoResolution" xml:space="preserve"><value>Auflösung</value></data>
+  <data name="Settings.VideoVSync" xml:space="preserve"><value>VSync</value></data>
+  <data name="Settings.VideoShaders" xml:space="preserve"><value>Shader</value></data>
+  <data name="Settings.Input" xml:space="preserve"><value>Eingabe</value></data>
+  <data name="Settings.InputMapping" xml:space="preserve"><value>Tastenbelegung</value></data>
+  <data name="Settings.InputProfiles" xml:space="preserve"><value>Eingabeprofile</value></data>
+  <data name="Settings.Accessibility" xml:space="preserve"><value>Barrierefreiheit</value></data>
+  <data name="Settings.ScreenReader" xml:space="preserve"><value>Screenreader aktivieren</value></data>
+  <data name="Settings.FontSize" xml:space="preserve"><value>Schriftgröße</value></data>
+  <data name="Settings.HighContrast" xml:space="preserve"><value>Hoher Kontrast</value></data>
+  <data name="Settings.ColorblindMode" xml:space="preserve"><value>Farbenblindmodus</value></data>
+  <data name="Settings.HapticFeedback" xml:space="preserve"><value>Haptisches Feedback</value></data>
+  <data name="Settings.VoiceCommands" xml:space="preserve"><value>Sprachbefehle</value></data>
+  <data name="Settings.Save" xml:space="preserve"><value>Speichern</value></data>
+  <data name="Settings.Cancel" xml:space="preserve"><value>Abbrechen</value></data>
+  <data name="Settings.RestoreDefaults" xml:space="preserve"><value>Standard wiederherstellen</value></data>
+  <data name="Settings.Advanced" xml:space="preserve"><value>Erweitert</value></data>
+
+  <!-- Cheats, Plugins, Scripting -->
+  <data name="Cheats.Title" xml:space="preserve"><value>Cheat-Codes</value></data>
+  <data name="Cheats.Add" xml:space="preserve"><value>Cheat hinzufügen</value></data>
+  <data name="Cheats.Edit" xml:space="preserve"><value>Bearbeiten</value></data>
+  <data name="Cheats.Delete" xml:space="preserve"><value>Löschen</value></data>
+  <data name="Cheats.Import" xml:space="preserve"><value>Importieren...</value></data>
+  <data name="Cheats.Export" xml:space="preserve"><value>Exportieren...</value></data>
+  <data name="Cheats.EnableAll" xml:space="preserve"><value>Alle aktivieren</value></data>
+  <data name="Cheats.DisableAll" xml:space="preserve"><value>Alle deaktivieren</value></data>
+  <data name="Cheats.Search" xml:space="preserve"><value>Suche</value></data>
+  <data name="Cheats.Group" xml:space="preserve"><value>Gruppe</value></data>
+  <data name="Cheats.Hotkey" xml:space="preserve"><value>Schnellzugriff</value></data>
+  <data name="Cheats.Enabled" xml:space="preserve"><value>Aktiviert</value></data>
+  <data name="Cheats.Description" xml:space="preserve"><value>Beschreibung</value></data>
+  <data name="Cheats.Type" xml:space="preserve"><value>Typ</value></data>
+  <data name="Cheats.Code" xml:space="preserve"><value>Code</value></data>
+
+  <!-- Plugin Management -->
+  <data name="Plugins.Title" xml:space="preserve"><value>Plugins</value></data>
+  <data name="Plugins.Manage" xml:space="preserve"><value>Verwalten...</value></data>
+  <data name="Plugins.Install" xml:space="preserve"><value>Installieren</value></data>
+  <data name="Plugins.Remove" xml:space="preserve"><value>Entfernen</value></data>
+  <data name="Plugins.Update" xml:space="preserve"><value>Aktualisieren</value></data>
+  <data name="Plugins.Enable" xml:space="preserve"><value>Aktivieren</value></data>
+  <data name="Plugins.Disable" xml:space="preserve"><value>Deaktivieren</value></data>
+  <data name="Plugins.Browse" xml:space="preserve"><value>Durchsuchen</value></data>
+  <data name="Plugins.Settings" xml:space="preserve"><value>Plugin-Einstellungen</value></data>
+  <data name="Plugins.Reload" xml:space="preserve"><value>Neu laden</value></data>
+  <data name="Plugins.Info" xml:space="preserve"><value>Informationen</value></data>
+
+  <!-- Netplay -->
+  <data name="Netplay.Connecting" xml:space="preserve"><value>Verbinde mit Netplay...</value></data>
+  <data name="Netplay.Connected" xml:space="preserve"><value>Netplay verbunden</value></data>
+  <data name="Netplay.Disconnected" xml:space="preserve"><value>Netplay getrennt</value></data>
+  <data name="Netplay.Host" xml:space="preserve"><value>Host</value></data>
+  <data name="Netplay.Client" xml:space="preserve"><value>Client</value></data>
+  <data name="Netplay.Ping" xml:space="preserve"><value>Ping: {0} ms</value></data>
+  <data name="Netplay.Players" xml:space="preserve"><value>Spieler: {0}</value></data>
+  <data name="Netplay.LobbyID" xml:space="preserve"><value>Lobby-ID: {0}</value></data>
+  <data name="Netplay.Chat" xml:space="preserve"><value>Chat</value></data>
+  <data name="Netplay.SendMessage" xml:space="preserve"><value>Nachricht senden...</value></data>
+  <data name="Netplay.SpectatorMode" xml:space="preserve"><value>Zuschauermodus</value></data>
+  <data name="Netplay.StartGame" xml:space="preserve"><value>Spiel starten</value></data>
+  <data name="Netplay.StopGame" xml:space="preserve"><value>Spiel beenden</value></data>
+
+  <!-- Tooltips -->
+  <data name="Tooltip.OpenROM" xml:space="preserve"><value>ROM laden oder Spiel starten</value></data>
+  <data name="Tooltip.SaveState" xml:space="preserve"><value>Aktuellen Spielstand speichern</value></data>
+  <data name="Tooltip.LoadState" xml:space="preserve"><value>Gespeicherten Spielstand laden</value></data>
+  <data name="Tooltip.Fullscreen" xml:space="preserve"><value>Vollbild umschalten</value></data>
+  <data name="Tooltip.Pause" xml:space="preserve"><value>Emulation pausieren</value></data>
+  <data name="Tooltip.Resume" xml:space="preserve"><value>Emulation fortsetzen</value></data>
+  <data name="Tooltip.FastForward" xml:space="preserve"><value>Emulation vorspulen</value></data>
+  <data name="Tooltip.SlowMotion" xml:space="preserve"><value>Emulation verlangsamen</value></data>
+  <data name="Tooltip.Rewind" xml:space="preserve"><value>Zurückspulen</value></data>
+  <data name="Tooltip.Settings" xml:space="preserve"><value>Einstellungen öffnen</value></data>
+  <data name="Tooltip.CheatManager" xml:space="preserve"><value>Cheat-Manager öffnen</value></data>
+  <data name="Tooltip.ROMManager" xml:space="preserve"><value>ROM-Manager anzeigen</value></data>
+  <data name="Tooltip.Profiler" xml:space="preserve"><value>Profiler starten/stoppen</value></data>
+  <data name="Tooltip.Debug" xml:space="preserve"><value>Debugger öffnen</value></data>
+  <data name="Tooltip.PluginManager" xml:space="preserve"><value>Plugins verwalten</value></data>
+  <data name="Tooltip.Netplay" xml:space="preserve"><value>Netplay starten oder beitreten</value></data>
+  <data name="Tooltip.CloudSync" xml:space="preserve"><value>Cloud-Synchronisation anstoßen</value></data>
+  <data name="Tooltip.Theme" xml:space="preserve"><value>Thema ändern</value></data>
+  <data name="Tooltip.Help" xml:space="preserve"><value>Hilfe und Dokumentation anzeigen</value></data>
+
+  <!-- Massive extras: UI, error, wizard, onboarding, asset, achievements, localization, accessibility, and more -->
+  <data name="Onboarding.Welcome" xml:space="preserve"><value>Willkommen bei GamesFlow Emulator!</value></data>
+  <data name="Onboarding.Next" xml:space="preserve"><value>Weiter</value></data>
+  <data name="Onboarding.Back" xml:space="preserve"><value>Zurück</value></data>
+  <data name="Onboarding.Skip" xml:space="preserve"><value>Überspringen</value></data>
+  <data name="Onboarding.Finish" xml:space="preserve"><value>Fertigstellen</value></data>
+  <data name="Onboarding.Intro" xml:space="preserve"><value>Vielen Dank, dass Sie sich für GamesFlow entschieden haben! Lassen Sie uns die wichtigsten Einstellungen gemeinsam konfigurieren.</value></data>
+  <data name="Onboarding.ChooseLanguage" xml:space="preserve"><value>Wählen Sie Ihre bevorzugte Sprache:</value></data>
+  <data name="Onboarding.ChooseTheme" xml:space="preserve"><value>Wählen Sie Ihr Design:</value></data>
+  <data name="Onboarding.ChooseROMFolder" xml:space="preserve"><value>Wählen Sie den ROM-Ordner:</value></data>
+  <data name="Onboarding.ChooseBIOSFolder" xml:space="preserve"><value>Wählen Sie den BIOS-Ordner:</value></data>
+  <data name="Onboarding.InputMapping" xml:space="preserve"><value>Controller-Eingabezuordnung durchführen</value></data>
+  <data name="Onboarding.FinishText" xml:space="preserve"><value>Die Einrichtung ist abgeschlossen! Viel Spaß beim Spielen!</value></data>
+  <data name="Wizard.Next" xml:space="preserve"><value>Weiter</value></data>
+  <data name="Wizard.Previous" xml:space="preserve"><value>Zurück</value></data>
+  <data name="Wizard.Cancel" xml:space="preserve"><value>Abbrechen</value></data>
+  <data name="Wizard.Finish" xml:space="preserve"><value>Fertig</value></data>
+  <data name="Error.PermissionDenied" xml:space="preserve"><value>Zugriff verweigert. Bitte überprüfen Sie Ihre Berechtigungen.</value></data>
+  <data name="Error.NetworkUnavailable" xml:space="preserve"><value>Netzwerk nicht verfügbar. Überprüfen Sie Ihre Verbindung.</value></data>
+  <data name="Error.OutOfMemory" xml:space="preserve"><value>Nicht genügend Speicher verfügbar.</value></data>
+  <data name="Error.SaveFailed" xml:space="preserve"><value>Fehler beim Speichern der Datei.</value></data>
+  <data name="Error.LoadFailed" xml:space="preserve"><value>Fehler beim Laden der Datei.</value></data>
+  <data name="Error.PluginCrash" xml:space="preserve"><value>Ein Plugin ist abgestürzt und wurde deaktiviert.</value></data>
+  <data name="Asset.Bios" xml:space="preserve"><value>BIOS</value></data>
+  <data name="Asset.Shader" xml:space="preserve"><value>Shader</value></data>
+  <data name="Asset.Overlay" xml:space="preserve"><value>Overlay</value></data>
+  <data name="Asset.Font" xml:space="preserve"><value>Schriftart</value></data>
+  <data name="Asset.Theme" xml:space="preserve"><value>Thema</value></data>
+  <data name="Asset.AssetPack" xml:space="preserve"><value>Asset-Paket</value></data>
+  <data name="Achievements.Title" xml:space="preserve"><value>Erfolge</value></data>
+  <data name="Achievements.Unlocked" xml:space="preserve"><value>Freigeschaltet</value></data>
+  <data name="Achievements.Locked" xml:space="preserve"><value>Gesperrt</value></data>
+  <data name="Achievements.Sync" xml:space="preserve"><value>Synchronisieren</value></data>
+  <data name="Localization.Title" xml:space="preserve"><value>Lokalisierung</value></data>
+  <data name="Localization.LanguagePack" xml:space="preserve"><value>Sprachpaket</value></data>
+  <data name="Accessibility.Enable" xml:space="preserve"><value>Barrierefreiheit aktivieren</value></data>
+  <data name="Accessibility.ScreenReader" xml:space="preserve"><value>Screenreader</value></data>
+  <data name="Accessibility.Colorblind" xml:space="preserve"><value>Farbenblindmodus</value></data>
+  <data name="Accessibility.LargeUI" xml:space="preserve"><value>Große Benutzeroberfläche</value></data>
+  <data name="Accessibility.VoiceCommands" xml:space="preserve"><value>Sprachbefehle</value></data>
+  <data name="Accessibility.SubtitleOverlay" xml:space="preserve"><value>Untertitel-Overlay</value></data>
+  <data name="Accessibility.HighContrast" xml:space="preserve"><value>Hoher Kontrast</value></data>
+  <data name="Accessibility.HapticFeedback" xml:space="preserve"><value>Haptisches Feedback</value></data>
+  <data name="Accessibility.RTL" xml:space="preserve"><value>Rechts-nach-links Layout</value></data>
+
+  <!-- Miscellaneous -->
+  <data name="About.Title" xml:space="preserve"><value>Über GamesFlow Emulator</value></data>
+  <data name="About.Version" xml:space="preserve"><value>Version</value></data>
+  <data name="About.License" xml:space="preserve"><value>Lizenz</value></data>
+  <data name="About.Credits" xml:space="preserve"><value>Danksagungen</value></data>
+  <data name="About.Website" xml:space="preserve"><value>Webseite</value></data>
+  <data name="About.Support" xml:space="preserve"><value>Support</value></data>
+  <data name="About.Community" xml:space="preserve"><value>Community</value></data>
+  <data name="About.Contact" xml:space="preserve"><value>Kontakt</value></data>
+  <data name="About.Copyright" xml:space="preserve"><value>© {0} GamesFlow Entwicklerteam</value></data>
+
+  <!-- Easter eggs and fun -->
+  <data name="EasterEgg.Coffee" xml:space="preserve"><value>Kaffeezeit!</value></data>
+  <data name="EasterEgg.SecretAchievement" xml:space="preserve"><value>Geheimnisvoller Erfolg freigeschaltet!</value></data>
+  <data name="EasterEgg.RetroMode" xml:space="preserve"><value>Retro-Modus aktiviert!</value></data>
+  <data name="EasterEgg.Unicorn" xml:space="preserve"><value>Sie haben das Einhorn gefunden!</value></data>
+
+  <!-- End -->
+</root>
