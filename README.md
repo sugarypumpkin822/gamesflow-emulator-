@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/sugarypumpkin822/gamesflow-emulator-/releases)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20|%20macOS%20|%20Linux-green.svg)](https://github.com/sugarypumpkin822/gamesflow-emulator-/)
-[![Discord](https://img.shields.io/badge/Discord-Join-7289DA.svg)](([https://discord.gg/YSu8YPa8Bb))
+[![Discord](https://img.shields.io/badge/Discord-Join-7289DA.svg)](https://discord.gg/YSu8YPa8Bb)
 [![Stars](https://img.shields.io/github/stars/sugarypumpkin822/gamesflow-emulator-?style=social)](https://github.com/sugarypumpkin822/gamesflow-emulator-/stargazers)
 [![Forks](https://img.shields.io/github/forks/sugarypumpkin822/gamesflow-emulator-?style=social)](https://github.com/sugarypumpkin822/gamesflow-emulator-/network/members)
 [![Issues](https://img.shields.io/github/issues/sugarypumpkin822/gamesflow-emulator-)](https://github.com/sugarypumpkin822/gamesflow-emulator-/issues)
