@@ -1,1 +1,40 @@
+name: Build
 
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+      - name: Publish (self-contained, win-x64)
+        if: runner.os == 'Windows'
+        run: dotnet publish -c Release -r win-x64 --self-contained true --output ./publish/win-x64
+      - name: Publish (self-contained, linux-x64)
+        if: runner.os == 'Linux'
+        run: dotnet publish -c Release -r linux-x64 --self-contained true --output ./publish/linux-x64
+      - name: Publish (self-contained, osx-x64)
+        if: runner.os == 'macOS'
+        run: dotnet publish -c Release -r osx-x64 --self-contained true --output ./publish/osx-x64
+      - name: Archive Published App
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gamesflow-emulator-${{ runner.os }}
+          path: |
+            ./publish/**
